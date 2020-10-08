@@ -176,7 +176,7 @@ public class FirstCallNewSettings extends Fragment {
                             break;
 
                         case 4:
-                            String filepath = Environment.getExternalStorageDirectory() + "/konverz_recent_logcat.log";
+                            String filepath = Environment.getExternalStorageDirectory() + "/delatacubes_recent_logcat.log";
                             startLogCapture(filepath);
 
                             ArrayList<Uri> uris = new ArrayList<Uri>();
@@ -184,7 +184,7 @@ public class FirstCallNewSettings extends Fragment {
                             uris.add(FileProvider.getUriForFile(getActivity(), getActivity().getApplicationContext().getPackageName() + ".provider", new File(filepath)));
 
 
-                            shareViaEmail(uris, "Konverz recent logcat");
+                            shareViaEmail(uris, "DeltaCubes recent logcat");
 
                             break;
                         case 5:
@@ -216,7 +216,7 @@ public class FirstCallNewSettings extends Fragment {
                                     uris1.add(FileProvider.getUriForFile(getActivity(), getActivity().getApplicationContext().getPackageName() + ".provider", new File(sdklogfilepath)));
                                     uris1.add(FileProvider.getUriForFile(getActivity(), getActivity().getApplicationContext().getPackageName() + ".provider", new File(logcatfilepath)));
 
-                                    shareViaEmail(uris1, "Konverz logs");
+                                    shareViaEmail(uris1, "DeltaCubes logs");
 
                                 }
 
@@ -471,7 +471,7 @@ public class FirstCallNewSettings extends Fragment {
             //String filelocation = Environment.getExternalStorageDirectory()+"/konverz.log";
             //Intent intent = new Intent(Intent.ACTION_SENDTO);
             Intent intent = new Intent(Intent.ACTION_SEND_MULTIPLE);
-            intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"srinivasarao@voxvalley.com"});
+            intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"deepika.n@voxvalley.com"});
             intent.setType("text/plain");
             String message = "Describe the issue here..";
             intent.putExtra(Intent.EXTRA_SUBJECT, subject);

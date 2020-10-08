@@ -73,8 +73,8 @@ public class CorgAdapter1 extends CursorAdapter {
                         Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                         sharingIntent.setType("text/plain");
                         sharingIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Konverz");
-                        sharingIntent.putExtra(Intent.EXTRA_TEXT, "Download Konverz from https://play.google.com/store/apps/details?id=com.app.deltacubes");
+                        sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "DeltaCubes");
+                        sharingIntent.putExtra(Intent.EXTRA_TEXT, "Download DeltaCubes from https://play.google.com/store/apps/details?id=com.app.deltacubes");
                         context.startActivity(sharingIntent);
                 }
             });

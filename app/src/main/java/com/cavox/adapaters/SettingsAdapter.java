@@ -153,7 +153,7 @@ public class SettingsAdapter extends BaseAdapter {
 
 
             if (position == 3) {
-                String version = "Konverz " + context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
+                String version = "Deltacubes " + context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionName;
                 holder.vertionTv.setVisibility(View.VISIBLE);
                 holder.vertionTv.setText(version);
             }
