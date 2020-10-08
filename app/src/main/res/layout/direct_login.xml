@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    android:isScrollContainer="true">
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/login_page_logo"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/ic_login" />
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@+id/login_page_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="@color/black_50"
+            android:ems="10"
+            android:hint="Username*"
+            android:maxLength="25"
+            android:paddingLeft="@dimen/_15sdp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_50"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/_13sdp" />
+
+        <EditText
+
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@+id/editText2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="@color/black_50"
+            android:drawableRight="@drawable/ic_password_hide"
+            android:ems="10"
+            android:hint="Password*"
+            android:inputType="textPassword"
+            android:maxLength="25"
+            android:paddingLeft="@dimen/_15sdp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_50"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/_13sdp" />
+        <EditText
+android:visibility="gone"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/black_50"
+            android:paddingLeft="15dp"
+            android:id="@+id/server"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:singleLine = "true"
+            android:ems="10"
+            android:hint="server:port:appname:projectid"
+            android:layout_below="@+id/editText1"
+            android:layout_centerHorizontal="true">
+        </EditText>
+        <!--  android:hint="server:port:appname:appid"-->
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp"
+            android:id="@+id/view2"
+            android:layout_below="@+id/editText1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <Spinner
+            android:visibility="gone"
+            android:layout_below="@+id/view2"
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:prompt="@string/spinner_title"
+            />
+
+        <!--android:layout_below="@+id/view2"-->
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@drawable/signup_button_selector"
+            android:gravity="center"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/signup_text_color_selector"
+            android:textSize="@dimen/_13sdp" />
+
+    </RelativeLayout>
+</ScrollView>

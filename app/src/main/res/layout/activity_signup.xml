@@ -1,0 +1,165 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/headerTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@color/theme_color"
+            android:gravity="center"
+            android:text="@string/setup"
+            android:textSize="@dimen/_17sdp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_white" />
+        <!-- main layout-->
+
+        <LinearLayout
+            android:id="@+id/mainLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_below="@+id/headerTv"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/button_country"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+               android:background="@drawable/signup_text"
+                android:textSize="@dimen/_16sdp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/color_text" />
+
+
+            <Button
+
+                android:id="@+id/button_country"
+                style="?android:attr/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableRight="@drawable/option_details1"
+                android:focusable="false"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/_15sdp"
+                android:text="@string/txt_country"
+                android:textColor="@color/color_country"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_50"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:drawableRight="@drawable/ic_password_hide"
+                android:hint="Password(Optional)"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_50"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/server"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:ems="10"
+                android:hint="server:port:appname:projectid"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black_50"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_13sdp" />
+
+            <!--  android:hint="server:port:appname:appid"-->
+
+            <Spinner
+                android:visibility="gone"
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_title"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                />
+
+            <TextView
+
+                android:id="@+id/loginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/signup_button_selector"
+                android:gravity="center"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:text="@string/signup"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+
+        </LinearLayout>
+
+
+        <!-- to remove
+        <TextView
+            android:id="@id/empty"
+            android:layout_above="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:visibility="gone"
+            android:text="" />-->
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_15sdp" />
+
+    </RelativeLayout>
+</ScrollView>

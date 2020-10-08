@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+   >
+
+    <ImageView
+        android:id="@id/button6"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:gravity="center"
+        android:src="@drawable/ic_call_normal"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@id/lcdscreen"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/_60sdp">
+
+        <EditText
+            android:id="@id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toStartOf="@id/imageView5"
+            android:layout_toLeftOf="@id/imageView5"
+            android:background="@drawable/firstcall_rounded_edittext_dialnumber"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/_20sdp" />
+
+        <ImageView
+            android:id="@id/imageView5"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/ic_erase_number" />
+
+        <View
+            android:id="@id/vieew"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@id/tablelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button6"
+        android:layout_below="@+id/lcdscreen"
+        android:background="@color/background"
+		android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center">
+
+        <TableRow android:layout_weight="1.0">
+
+            <TextView
+                android:id="@id/imageButton_dialpad_1"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:height="0dp"
+                android:background="@drawable/firstcall_dialpad_button_selector1"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:id="@id/imageButton_dialpad_2"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/firstcall_dialpad_button_selector1"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:id="@id/imageButton_dialpad_3"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/firstcall_dialpad_button_selector1"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1.0">
+
+            <TextView
+                android:id="@id/imageButton_dialpad_4"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:height="0dp"
+                android:background="@drawable/firstcall_dialpad_button_selector1"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:id="@id/imageButton_dialpad_5"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/firstcall_dialpad_button_selector1"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:id="@id/imageButton_dialpad_6"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/firstcall_dialpad_button_selector1"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1.0">
+
+            <TextView
+                android:id="@id/imageButton_dialpad_7"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:height="0dp"
+                android:background="@drawable/firstcall_dialpad_button_selector1"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:id="@id/imageButton_dialpad_8"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/firstcall_dialpad_button_selector1"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:id="@id/imageButton_dialpad_9"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/firstcall_dialpad_button_selector1"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+        </TableRow>
+
+        <TableRow android:layout_weight="1.0">
+
+            <TextView
+                android:id="@id/imageButton_dialpad_plus"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:height="0dp"
+                android:background="@drawable/firstcall_dialpad_button_selector1"
+                android:gravity="center"
+                android:text="*"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:id="@id/imageButton_dialpad_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/firstcall_dialpad_button_selector1"
+                android:gravity="center"
+                android:text="0 +"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:id="@id/imageButton_dialpad_hash"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/firstcall_dialpad_button_selector1"
+                android:gravity="center"
+                android:text="\#"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

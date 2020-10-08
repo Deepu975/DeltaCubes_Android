@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:id="@+id/mainlayout">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/theme_color"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_gravity="left|top"
+            >
+
+        </androidx.appcompat.widget.Toolbar>
+        <!--<TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Number"
+            android:textColor="@color/color_text"
+            android:paddingLeft="36dp"
+            android:maxLines="1"
+            />-->
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="App May Not Be Usable In This State. Click Continue To Create new Account!On clicking continue All the App data may be lost!"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_text"
+      android:layout_above="@+id/emptyview"
+        android:id="@+id/textView13" />
+
+
+
+
+    <Button
+        android:id="@+id/button_continue"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+
+        android:background="@drawable/pink_btn_rounded"
+        android:gravity="center"
+        android:text="@string/string_continue"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="20dp"
+android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/emptyview" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/pink_btn_rounded"
+        android:gravity="center"
+        android:text="CANCEL"
+        android:textColor="@color/color_white"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/emptyview" />
+
+    <View
+        android:layout_marginTop="40dp"
+        android:id="@+id/emptyview"
+        android:layout_width="80px"
+        android:layout_height="20px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

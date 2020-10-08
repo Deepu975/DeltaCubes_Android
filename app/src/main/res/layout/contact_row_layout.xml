@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_10sdp"
+    android:padding="@dimen/_3sdp"
+    android:background="@color/transparent">
+    <!--todo button-->
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/infoimageView"
+        android:background="@drawable/info_nor1" />
+
+
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        card_view:civ_border_width="0.1dp"
+        android:src="@drawable/defaultcontact"
+        android:id="@+id/imageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_alignTop="@+id/text2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <com.cavox.views.CustomTextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingRight="@dimen/_4sdp"
+        style="@style/myFontLight"
+        android:textSize="@dimen/_12sdp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageview"
+        android:layout_toLeftOf="@+id/infoimageView"/>
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/imageview1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:src="@drawable/outgoingcall"
+        android:layout_toRightOf="@+id/imageview"
+        android:layout_below="@+id/text1" />
+
+    <com.cavox.views.CustomTextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        style="@style/myFontThin"
+        android:textSize="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_4sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:maxLines="1"
+        android:textColor="@color/black_50"
+        android:layout_alignBottom="@+id/imageview1"
+        android:layout_toRightOf="@+id/imageview1"
+        android:layout_toLeftOf="@+id/infoimageView" />
+    <com.cavox.views.CustomTextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/text2"
+        style="@style/myFontThin"
+        android:textSize="@dimen/_10sdp"
+        android:maxLines="1"
+        android:textColor="@color/black_50"
+        android:layout_alignLeft="@+id/text2"
+        android:layout_alignStart="@+id/text2"
+        android:layout_toLeftOf="@+id/infoimageView"/>
+    <com.cavox.views.CustomTextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/text3"
+        style="@style/myFontThin"
+        android:textSize="@dimen/_10sdp"
+        android:maxLines="1"
+        android:textColor="@color/black_50"
+        android:layout_alignLeft="@+id/text2"
+        android:layout_alignStart="@+id/text2"
+        android:layout_toLeftOf="@+id/infoimageView"/>
+</RelativeLayout>

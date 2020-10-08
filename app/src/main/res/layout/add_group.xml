@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/user_imageLL"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/theme_color"
+        android:layout_height="@dimen/_140sdp">
+        <com.cavox.views.RoundedImageView
+            android:id="@+id/user_image"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_group_avatar"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/add_photo"
+            android:text="@string/add_photo"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableLeft="@drawable/ic_camera_profile"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/group_photo"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_below="@+id/user_imageLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        style="?android:attr/editTextStyle"
+        android:ems="10"
+        android:hint="Group Name"
+        android:layout_margin="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:singleLine="true"
+        android:maxLength="40"
+        android:textColorHint="@color/black_overlay"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/color_black" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/user_presenceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        style="?android:attr/editTextStyle"
+        android:layout_below="@+id/user_name"
+        android:textColor="@color/color_black"
+        android:hint="Description"
+        android:singleLine="true"
+        android:textColorHint="@color/black_overlay"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_presenceText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingRight="@dimen/_25sdp"
+        android:text="@string/done"
+        android:textSize="@dimen/_13sdp"
+        android:background="@drawable/dark_violet_btn_selector"
+        android:gravity="center"
+        android:textColor="@color/color_white" />
+
+
+
+</RelativeLayout>

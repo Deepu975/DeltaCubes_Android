@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">DetlaCubes</string>
+    <string name="setup">Setup</string>
+    <string name="txt_country">Country</string>
+    <string name="code">+91</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="signup">Sign Up</string>
+    <string name="txt_search_country">Search Country</string>
+    <string name="error_empty_number">Please enter a valid number</string>
+    <string name="activation">Activation</string>
+    <string name="activation_string">Please enter the activation code sent to your phone</string>
+    <string name="your_phone">Your Phone</string>
+    <string name="string_continue">Continue</string>
+    <string name="say_something">say something..</string>
+    <string name="name">Name</string>
+    <string name="presence_text">Status Message</string>
+    <string name="done">Done</string>
+    <string name="save">Save</string>
+    <string name="profile_photo">Add profile photo</string>
+    <string name="add_photo">add photo</string>
+    <string name="group_photo">Add Group image</string>
+    <string name="error_empty_group">Group Name is mandatory</string>
+    <string name="group_members">Group Members </string>
+    <string name="add_member">Add Members </string>
+    <string name="exit_group">Exit Group</string>
+    <string name="network_unavailable_message">Network Unavailable</string>
+
+    <!-- Chat Strings -->
+
+    <string name="chat_camera">Camera</string>
+    <string name="chat_gallery">Gallery</string>
+    <string name="chat_documents">Documents</string>
+    <string name="chat_contact">Contact</string>
+    <string name="chat_audio">Audio</string>
+    <string name="chat_location">Location</string>
+    <string name="remove">Remove Photo</string>
+
+    <string name="record_help_text">Hold to record, release to send</string>
+    <string name="chat_screen_audio_start_message">Recording Started</string>
+    <string name="send_location">Send Location</string>
+    <string name="location_not_found">Location not found</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+    <string name="location_settings">Location settings</string>
+    <string name="gps_not_enable">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="install_file_manager">Please install a File Manager.</string>
+    <string name="wrong_document">No document selected</string>
+    <string name="select_file">Choose a File</string>
+    <string name="media_not_available">Media not available</string>
+    <string name="media_player_nt_available">No Application found</string>
+    <string name="chat_screen_today_message">Today</string>
+    <string name="chat_screen_yesterday_message">Yesterday</string>
+    <string name="want_to_delete">Are you sure you want to delete selected messages?</string>
+    <string name="delete_cap">DELETE</string>
+    <string name="cancel_cap">CANCEL</string>
+    <string name="spinner_title">ProjectID</string>
+    <string name="search">Search</string>
+
+    !--Alert Dialog-->
+    <string name="alert_dialog_title">Alert</string>
+    <string name="alert_dialog_message">Do you really want to exit the app?</string>
+    <string name="alert_dialog_btn_no">No</string>
+    <string name="alert_dialog_btn_yes">Yes</string>
+    <string name="chat_alert_dialog_btn_no">Cancel</string>
+    <string name="chat_alert_dialog_btn_yes">Send</string>
+
+
+</resources>

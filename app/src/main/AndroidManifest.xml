@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.deltacubes">
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <!--<uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+-->
+    <!--<uses-permission android:name="android.permission.READ_LOGS"/>-->
+
+    <application
+        android:name="com.cavox.utils.App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/IamLiveTheme"
+        android:requestLegacyExternalStorage="true"
+        tools:replace="allowBackup,name">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBGqiHDk9Qy-akUPC3yrzTDAtGzzadmghs" />
+
+        <activity android:name="com.cavox.konverz.SplashActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+             android:name="com.cavox.konverz.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.ZoneSelectActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.SignUpActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+
+        <activity
+             android:name="com.cavox.konverz.PaymentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+
+        <activity
+             android:name="com.cavox.konverz.PaymentActivitySandBox"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+
+        <activity
+             android:name="com.cavox.konverz.ActivationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.UserProfileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+             android:name="com.cavox.konverz.ResetPasswordActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.NewChatActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.ShowUserLogActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.PlayNewAudioCallActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.PlayNewVideoCallActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+
+              android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.PlaySipCallActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.InfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+
+        <activity
+             android:name="com.cavox.konverz.ChatFtSettingsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+
+        <activity
+             android:name="com.cavox.konverz.GetReadPhoneStatePermission"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+
+        <activity
+             android:name="com.cavox.konverz.EmptyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.ManageUserActivity"
+            android:launchMode = "singleTask"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+             android:name="com.cavox.konverz.LocationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamLiveTheme" />
+        <activity
+             android:name="com.cavox.konverz.ShareContactsInChatActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.SoundRecorderActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.ShowAppContactsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="video/*" />
+
+            </intent-filter>
+
+        </activity>
+        <activity
+             android:name="com.cavox.konverz.ShowCORGMultiSelectActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.ShowAppContactsMultiSelectActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.LoginFailureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.CreateGroupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.CallScreenActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+             android:name="com.cavox.konverz.EditGroupInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.ManageGroupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.GroupMessageInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.DirectLoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.StartActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/IamLiveTheme" />
+        <activity
+             android:name="com.cavox.konverz.AddContactActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.ContactShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <activity
+             android:name="com.cavox.konverz.ContactViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <!--
+        <activity
+             android:name="com.cavox.konverz.ChatAdvancedActivity"
+            android:theme="@style/Theme.AppCompat"
+            />
+            -->
+        <activity
+             android:name="com.cavox.konverz.ChatAdvancedActivity"
+            android:launchMode = "singleTask"
+            android:theme="@style/AppThemeNormal"
+            />
+        <activity
+             android:name="com.cavox.konverz.GroupChatAdvancedActivity"
+            android:launchMode = "singleTask"
+            android:theme="@style/AppThemeNormal"
+            />
+
+        <receiver
+            android:name="com.cavox.receivers.CSGroupNotificationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="CSGroupNotificationReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.cavox.receivers.CSCallMissed"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="CSCallMissed" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.cavox.receivers.CSUserJoined"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="CSUserJoined" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.cavox.receivers.CSCallReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="CSCallReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.cavox.receivers.CSChatReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="CSChatReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.cavox.receivers.MissedCallNotificationHandler"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+             android:name="com.cavox.konverz.ShowImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNormal" />
+        <receiver android:name="com.cavox.receivers.InComingCallHandlingReceiver" />
+        <receiver android:name="com.cavox.receivers.DismissCallNotificationHandler" />
+
+
+        <!-- Fire base Notifications -->
+        <service android:name="com.cavox.receivers.FireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <service
+            android:name="com.cavox.foregroundservices.ForeGroundCallService"
+            android:enabled="true"
+            android:exported="false"></service>
+        <service
+            android:name="com.cavox.foregroundservices.ForeGroundChatService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+
+        <!-- ./Fire base Notifications -->
+    </application>
+
+</manifest>

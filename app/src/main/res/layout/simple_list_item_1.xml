@@ -1,0 +1,17 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text1"
+    style="@style/myFontLight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:textSize="@dimen/_13sdp"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+    android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+    android:textColor="@color/black" />
+
+    <!--
+        android:background="@color/colorPrimary"
+        android:textColorHint="@color/black"
+        android:textColorHighlight="@color/color_white"
+        -->

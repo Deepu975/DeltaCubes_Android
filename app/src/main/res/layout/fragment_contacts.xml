@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5c4c4"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/transparent"
+        android:fastScrollEnabled="true"
+        android:background="@color/background"
+        android:layout_above="@+id/bottomlayout"
+        android:layout_below="@+id/contact_search_layout"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:id="@+id/contact_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/background">
+
+        <com.cavox.views.CustomEditText
+            android:id="@+id/editText"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/contacts_search_cancel_img"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/customdrawable_search"
+            android:hint="Search Contacts"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_50"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/contacts_search_cancel_img"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:padding="10dp"
+            android:src="@drawable/ic_search_clear"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.cavox.views.CustomTextView
+            android:id="@+id/text1"
+            style="@style/myFontLight"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toLeftOf="@+id/view1"
+            android:layout_toStartOf="@+id/view1"
+            android:background="@color/theme_color"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="All Contacts"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.cavox.views.CustomTextView
+            android:id="@+id/text2"
+            style="@style/myFontLight"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/text1"
+            android:layout_marginRight="4dp"
+            android:layout_toEndOf="@+id/view1"
+            android:layout_toRightOf="@+id/view1"
+            android:background="@color/theme_color"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="App Contacts"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomlayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:scaleType="center"
+        app:fabCustomSize="@dimen/_40sdp"
+        android:src="@drawable/ic_person_add_24"
+        app:backgroundTint="#2799f3" />
+
+    <LinearLayout
+        android:id="@+id/transparent_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_50"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/add_contact_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addcontact"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_26sdp"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_35sdp"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:id="@+id/add_new_contact_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/add_contact_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:text="New Contact"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/new_contact_bg"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_person_add_24" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/add_group_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/add_contact_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:text="New Group"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/new_group_bg"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/tab_contacts" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_direct_contact_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/add_contact_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:text="New Direct Contact"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/new_direct_contact_bg"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/plus_img" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="No Contacts"
+        android:textColor="@color/black_50" />
+
+
+</RelativeLayout>

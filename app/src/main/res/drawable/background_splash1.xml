@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:drawable="@color/theme_color"
+        >
+
+        </item>
+    <item
+        android:gravity="center"
+        android:id="@+id/id1"
+        android:width="8dp"
+        android:height="8dp"
+        >
+        <bitmap android:src="@drawable/ic_launcher"
+            ></bitmap>
+
+
+    </item>
+
+    <item
+       
+        android:width="10dp"
+        android:height="2dp"
+        >
+        <bitmap android:src="@drawable/iamlive"
+            ></bitmap>
+    </item>
+
+</layer-list>

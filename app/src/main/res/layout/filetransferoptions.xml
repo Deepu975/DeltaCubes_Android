@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/white">
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <TableRow android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/row11"
+                android:layout_weight="1"
+                android:height="70dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButton_dialpad_1"
+                    android:gravity="center"
+                    android:text="Document" />
+
+                <ImageView
+                    android:id="@+id/imageButton_dialpad_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/docselect"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row12"
+                android:layout_weight="1"
+                android:height="70dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButton_dialpad_2"
+                    android:gravity="center"
+                    android:text="Camera" />
+
+                <ImageView
+                    android:id="@+id/imageButton_dialpad_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/camselect"
+
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/row13"
+                android:layout_weight="1"
+                android:height="70dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButton_dialpad_3"
+                    android:gravity="center"
+                    android:text="Gallery" />
+
+                <ImageView
+                    android:id="@+id/imageButton_dialpad_3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/galeryselect" />
+            </RelativeLayout>
+
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/row21"
+                android:layout_weight="1"
+                android:height="70dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButton_dialpad_4"
+                    android:gravity="center"
+                    android:text="Audio" />
+
+                <ImageView
+                    android:id="@+id/imageButton_dialpad_4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/audioselect" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row22"
+                android:layout_weight="1"
+                android:height="70dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButton_dialpad_5"
+                    android:gravity="center"
+                    android:text="Location" />
+
+                <ImageView
+                    android:id="@+id/imageButton_dialpad_5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/locationselect"
+
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/row23"
+                android:layout_weight="1"
+                android:height="70dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageButton_dialpad_6"
+                    android:gravity="center"
+                    android:text="Contact" />
+
+                <ImageView
+                    android:id="@+id/imageButton_dialpad_6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/contactselect"
+
+                    />
+            </RelativeLayout>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</RelativeLayout>

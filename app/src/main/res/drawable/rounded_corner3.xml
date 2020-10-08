@@ -1,0 +1,16 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="@color/chat_sentmsg_color" />
+
+
+
+    <corners android:topLeftRadius="10dp" android:topRightRadius="0.1dp"
+        android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp"/>
+
+
+
+
+</shape>
+
+

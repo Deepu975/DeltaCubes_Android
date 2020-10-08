@@ -1,0 +1,119 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29'
+    defaultConfig {
+        applicationId "com.app.deltacubes"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+      /*  splits {
+
+            // Configures multiple APKs based on ABI.
+            abi {
+
+                // Enables building multiple APKs per ABI.
+                enable true
+
+                // By default all ABIs are included, so use reset() and include to specify that we only
+                // want APKs for x86 and x86_64.
+
+                // Resets the list of ABIs that Gradle should create APKs for to none.
+                reset()
+
+                // Specifies a list of ABIs that Gradle should create APKs for.
+                include "x86", "x86_64", "armeabi-v7a", "armeabi", "arm64-v8a", "arm64"
+
+                // Specifies that we do not want to also generate a universal APK that includes all ABIs.
+                universalApk true
+            }
+        }*/
+
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+        flatDir {
+            dirs 'D:\\AirYou-Experiments-Updated-1404-1.4.2.3\\AirYou-Experiments-Updated-1404\\app\\build\\outputs\\aar'
+        }
+        google()
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    implementation group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
+ //   implementation (name:'app-release', ext:'aar')
+    //implementation (name:'circularimageview-3.0.2', ext:'aar')
+    implementation 'vox-cpaas:connectsdk:1.4.2.5'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    // Universal Image loader for loading images
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    //annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    implementation 'com.stripe:stripe-android:11.1.3'
+
+
+
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    implementation 'org.apache.commons:commons-lang3:3.6'
+
+
+
+
+}
+apply plugin: 'com.google.gms.google-services'

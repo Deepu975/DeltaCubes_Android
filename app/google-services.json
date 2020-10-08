@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "179024210658",
+    "firebase_url": "https://konverz-9cd60.firebaseio.com",
+    "project_id": "konverz-9cd60",
+    "storage_bucket": "konverz-9cd60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179024210658:android:21e587277a1e3cbc",
+        "android_client_info": {
+          "package_name": "com.app.deltacubes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179024210658-cfte9ej3u5d32bi8n5ltrmr3a7utljg7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWxyyyMqV-NoMqcmpuhIHYvKmCr8lufHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179024210658-cfte9ej3u5d32bi8n5ltrmr3a7utljg7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
